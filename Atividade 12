@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+
+        Console.Write("Escreva um número " );
+        float numero = float.Parse(Console.ReadLine());
+        switch(numero == 0) {
+        case true:
+          Console.Write("O número é igual a zero.");
+          break;
+        default:
+          Console.Write("O número é diferente de zero.");
+          break;
+        }
+
+    }
+}
