@@ -1,0 +1,14 @@
+using System;
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Escreva um número: ");
+        string input = Console.ReadLine();
+
+        string resultado = string.IsNullOrEmpty(input) ? "Está vazio" : "Não está vazio.";
+
+        Console.WriteLine(resultado);
+    }
+} 
