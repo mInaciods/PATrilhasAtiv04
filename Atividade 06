@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Você quer leite OU açúcar no seu café? ");
+        string adicional = Console.ReadLine();
+
+        bool resposta = adicional.Equals("leite", StringComparison.OrdinalIgnoreCase) ||
+                        adicional.Equals("açúcar", StringComparison.OrdinalIgnoreCase);
+
+        if (resposta)
+        {
+            Console.WriteLine("Café com adicional preparado!");
+        }
+        else
+        {
+            Console.WriteLine("Café sem adicional preparado!");
+        }
+    }
+}
