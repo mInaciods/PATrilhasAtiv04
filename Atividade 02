@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+  public static void Main(string[] args)
+  {
+    Console.Write("Deseja comprar um carro novo? ");
+    string desejo = Console.ReadLine();
+    Console.Write("Você tem dinheiro suficiente para tal? ");
+    string dinheiro = Console.ReadLine();
+    bool resposta = Convert.ToBoolean(desejo.Equals("sim", StringComparison.OrdinalIgnoreCase));
+    bool resposta2 = Convert.ToBoolean(dinheiro.Equals("sim", StringComparison.OrdinalIgnoreCase));
+
+    if (resposta == true && resposta2 == true)
+    { Console.Write("Parabéns, você pode comprar um carro novo!");
+    }
+    else{
+      Console.Write("Você não comprar um carro!");
+    }
+
+  }
+}
