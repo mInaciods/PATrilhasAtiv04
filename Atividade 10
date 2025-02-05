@@ -1,0 +1,18 @@
+ using System;
+
+class Program
+{
+    static void Main()
+    {
+
+        Console.Write("Escreva um número inteiro: " );
+         float numero = float.Parse(Console.ReadLine());
+        if (numero > 10 || numero < 0){
+             Console.WriteLine("Número inválido.");
+           }
+        else{
+              Console.WriteLine("Número válido.");
+           }
+
+    }
+}
