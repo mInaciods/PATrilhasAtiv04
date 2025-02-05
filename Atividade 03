@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+  public static void Main(string[] args)
+  {
+    Console.Write("Possui um diploma de ensino superior? ");
+    string diploma = Console.ReadLine();
+    Console.Write("Digite sua idade: ");
+    float idade = float.Parse(Console.ReadLine());
+    bool resposta = Convert.ToBoolean(diploma.Equals("sim", StringComparison.OrdinalIgnoreCase));
+
+
+    if (idade >= 21 && resposta == true)
+    { Console.Write("Parabéns, você está qualificado para a vaga!");
+    }
+    else{
+      Console.Write("Você não está qualidicado!");
+    }
+
+  }
+}
