@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+  public static void Main(string[] args)
+  {
+    Console.Write("Deseja não cancelar a opereção? ");
+    string palavra = Console.ReadLine();
+
+    if (palavra.ToLower() == "não")
+    { Console.Write("Por favor, confirme o cancelamento da operação.");
+    }
+    else{
+      Console.Write("Cancelamento da operação cancelado com sucesso.");
+    }
+
+  }
+}
