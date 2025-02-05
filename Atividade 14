@@ -1,0 +1,18 @@
+using System;
+
+class Program
+{
+  public static void Main(string[] args)
+  {
+    Console.Write("Digite uma palavra ");
+    string palavra = Console.ReadLine();
+
+    if (palavra.Length == 0)
+    { Console.Write("A palavra é vazia.");
+    }
+    else{
+      Console.Write("A palavra não é vazia.");
+    }
+
+  }
+}
