@@ -1,0 +1,28 @@
+using System;
+using System.Threading;
+
+class Program
+{
+    static void Main()
+    {
+        while(true){
+          Console.Clear();
+          Console.WriteLine("Você é um membro ativo do clube? " );
+          string resposta = Console.ReadLine();
+          switch(resposta.ToLower()) {
+          case "sim":
+            Console.WriteLine("Continue aproveitando seus benefícios.");
+            break;
+          case "não":
+            Console.WriteLine("Atualizar sua inscrição para continuar usurfruindo os benefícios do clube.");
+            break;
+          default:
+            Console.WriteLine("Opção inválida!");
+            Thread.Sleep(1000);
+            continue;
+        }
+        break;
+        }
+
+    }
+}
