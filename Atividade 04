@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+  public static void Main(string[] args)
+  {
+    Console.Write("Possui assinatura do streming MAX? ");
+    string streaming = Console.ReadLine();
+    Console.Write("Já assistiu Game of Thrones? ");
+    string serie = Console.ReadLine();
+    bool resposta1 = Convert.ToBoolean(streaming.Equals("sim", StringComparison.OrdinalIgnoreCase));
+    bool resposta2 = Convert.ToBoolean(serie.Equals("sim", StringComparison.OrdinalIgnoreCase));
+
+
+    if (resposta1 == true && resposta2 == true)
+    { Console.Write("Ótimo, agora você pode assistir a nova temporada!");
+    }
+    else{
+      Console.Write("Que pena, você não pode assistir a nova temporada.");
+    }
+
+  }
+}
