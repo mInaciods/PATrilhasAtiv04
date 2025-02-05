@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+
+        Console.Write("Você é um robô? " );
+         string resposta = Console.ReadLine();
+        switch(resposta.ToLower()) {
+        case "sim":
+          Console.Write("Você é um robô.");
+          break;
+        case "não":
+          Console.Write("Prove que não é um robô.");
+          break;
+        default:
+          Console.Write("Resposta inválida.");
+          break;
+        }
+
+    }
+}
