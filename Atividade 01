@@ -1,0 +1,22 @@
+using System;
+
+class Program
+{
+  public static void Main(string[] args)
+  {
+    Console.Write("Digite sua idade: ");
+    float idade = float.Parse(Console.ReadLine());
+    Console.Write("Tem CNH? ");
+    string cnh = Console.ReadLine();
+    bool resposta = Convert.ToBoolean(cnh.Equals("sim", StringComparison.OrdinalIgnoreCase));
+
+
+    if (idade >= 18 && resposta == true)
+    { Console.Write("Você pode dirigir!");
+    }
+    else{
+      Console.Write("Você não pode dirigir");
+    }
+
+  }
+}
