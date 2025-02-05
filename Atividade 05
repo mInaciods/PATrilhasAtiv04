@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+  public static void Main(string[] args)
+  {
+    Console.Write("Qual o seu nome? ");
+    string nome = Console.ReadLine();
+    Console.Write("Qual a sua idade? ");
+    float idade = float.Parse(Console.ReadLine());
+
+    if (nome.Length >= 3 && idade >= 18)
+    { Console.Write("Acesso permitido.");
+    }
+    else{
+      Console.Write("Acesso negado.");
+    }
+
+  }
+}
